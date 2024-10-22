@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get real-time weather information for your city with our simple weather app.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter City" autocomplete="off">
+        <button id="fetchButton">Get Weather</button>
+        <div id="loadingIndicator" class="hidden">Loading...</div>
+        <div id="weatherOutput" class="hidden" aria-live="polite">
+            <div class="weather-details"></div>
+        </div>
+        <div id="errorOutput" class="hidden" aria-live="assertive"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
